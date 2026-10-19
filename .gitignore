@@ -1,0 +1,36 @@
+# Dependencies
+node_modules
+.pnpm-store
+./node_modules
+./apps/mobile/node_modules
+./apps/web/node_modules
+./apps/worker/node_modules
+./packages/core/node_modules
+./packages/ui/node_modules
+
+# Production builds
+dist
+.next
+out
+build
+
+# Turbo cache
+.turbo
+
+# Test coverage
+coverage
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# System files
+.DS_Store
+Thumbs.db

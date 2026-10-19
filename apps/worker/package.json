@@ -1,0 +1,29 @@
+{
+  "name": "@repo/worker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@repo/core": "workspace:*",
+    "bullmq": "^5.41.0",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.40.0",
+    "expo-server-sdk": "^3.13.0",
+    "ioredis": "^5.5.0",
+    "pg": "^8.13.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "@types/pg": "^8.11.11",
+    "tsup": "^8.3.6",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  }
+}

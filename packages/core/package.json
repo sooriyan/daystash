@@ -1,0 +1,60 @@
+{
+  "name": "@repo/core",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./schema/postgres": {
+      "types": "./dist/schema/postgres.d.ts",
+      "import": "./dist/schema/postgres.js",
+      "require": "./dist/schema/postgres.cjs"
+    },
+    "./schema/sqlite": {
+      "types": "./dist/schema/sqlite.d.ts",
+      "import": "./dist/schema/sqlite.js",
+      "require": "./dist/schema/sqlite.cjs"
+    },
+    "./validators/sync": {
+      "types": "./dist/validators/sync.d.ts",
+      "import": "./dist/validators/sync.js",
+      "require": "./dist/validators/sync.cjs"
+    },
+    "./recurrence/rruleEngine": {
+      "types": "./dist/recurrence/rruleEngine.d.ts",
+      "import": "./dist/recurrence/rruleEngine.js",
+      "require": "./dist/recurrence/rruleEngine.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "@date-fns/tz": "^1.5.0",
+    "date-fns": "^4.4.0",
+    "drizzle-orm": "^0.40.0",
+    "rrule": "^2.8.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "rimraf": "^6.0.1",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  }
+}

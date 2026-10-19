@@ -1,0 +1,16 @@
+{
+  "name": "DayStash Reminders",
+  "short_name": "DayStash",
+  "description": "Offline-First Multi-Device Reminders",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#090d16",
+  "theme_color": "#090d16",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
